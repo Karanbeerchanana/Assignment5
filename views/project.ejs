@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Solutions</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body tabindex="-1">
+    <%- include('partials/navbar', {page:""}) %> 
+
+    <br />
+
+    <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold"><%= project.title %></h1>
+
+            <p class="py-6">"Below, you will find detailed information about the project: <%= project.title %></p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="<%= project.feature_img_url %>"
+            alt="Image"
+          />
+        </div>
+        <div class="prose">
+          <p>
+            <%= project.intro_short%>
+          </p>
+          <p><strong>Impact: </strong>  <br>
+            <%= project.impact %>
+          </p>
+          <p><strong>More Information:</strong> <a href="<%= project.original_source_url %>"> <%= project.original_source_url %></a></p>
+          <script> 
+            document.addEventListener("DOMContentLoaded", ()=>{ 
+            /* TODO: "fetch" the data at: https://dummyjson.com/quotes/random and update an element in the DOM 
+            with the "quote" and "author" */ 
+            fetch("https://dummyjson.com/quotes/random")
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById("quote-block").innerHTML = `
+              "<em>${data.quote}</em>" - ${data.author}
+            `;
+          })
+          .catch(error => console.error("Error fetching quote:", error));
+
+          }); 
+          </script>
+          <blockquote id="quote-block"></blockquote>
+          <a href="#" onclick="history.back(); return false;" class="btn btn-primary mt-6">Return</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

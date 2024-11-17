@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Climate Solutions</title>
+  </head>
+  <body>    
+    <%- include('partials/navbar', {page: '/home'}) %> 
+
+    <main class="container mx-auto mt-10">
+      <section class="hero bg-base-200 rounded-lg p-6">
+        <div class="max-w-md mx-auto text-center">
+          <h1 class="text-4xl font-bold mb-4">Explore Climate Solutions</h1>
+          <p class="py-6">
+            Discover projects addressing climate change across various sectors.
+          </p>
+          <a href="/solutions/projects" class="btn btn-primary"
+            >View All Projects</a
+          >
+        </div>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+        <div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full"
+                src="https://drawdown.org/sites/default/files/solutions2020/solution_recycledmetals_0.jpg"
+                alt="Abandoned Farmland Restoration"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">"Recycled Metals</h2>
+              <p>
+                Metals are extracted from nonrenewable ores. Recycled metals
+                capitalize on already extracted materials—making it possible to
+                produce goods more efficiently, reduce the need to extract new
+                resources, and cut down on energy and water use.
+              </p>
+              <div class="card-actions justify-end py-6">
+                <a href="/solutions/projects/17" class="btn btn-primary"
+                  >More Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full"
+                src="https://drawdown.org/sites/default/files/solutions/solution_ships01.jpg"
+                alt="Alternative Cement"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Efficient Ocean Shipping</h2>
+              <p>
+                Huge volumes of goods are shipped across oceans. Fuel-saving
+                ship design, technologies, and practices can trim greenhouse gas
+                emissions.
+              </p>
+              <div class="card-actions justify-end py-6">
+                <a href="/solutions/projects/18" class="btn btn-primary"
+                  >More Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full"
+                src="https://drawdown.org/sites/default/files/solutions2020/solution_improvedmanuremanagement.jpg"
+                alt="Bicycle Infrastructure"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Improved Manure Management</h2>
+              <p>
+                Livestock manure produces methane, a potent greenhouse gas.
+                Advanced technologies and practices for managing manure can
+                reduce the adverse climate impact of animal agriculture.
+              </p>
+              <div class="card-actions justify-end py-6">
+                <a href="/solutions/projects/20" class="btn btn-primary"
+                  >More Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

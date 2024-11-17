@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body tabindex="-1">
+
+    <%- include('partials/navbar', {page: ''}) %> 
+
+    <br>
+
+    <div class="container mx-auto">
+
+        <div class="hero rounded-lg p-6">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">404</h1>
+                    <p class="py-6"><%= message %></p>
+                    <a href="/" class="btn btn-primary mt-6">Go Back to Homepage</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+            
