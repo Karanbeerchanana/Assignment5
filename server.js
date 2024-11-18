@@ -9,7 +9,7 @@
  *
  * Name: Karanbeer Chanana            Student ID: 147884225        Date: November 18, 2024
  *
- * Published URL: web322-a5-beryl.vercel.app
+ * Published URL: https://assignment5-omega.vercel.app/
  *
  ********************************************************************************/
 
